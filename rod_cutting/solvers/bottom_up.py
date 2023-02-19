@@ -7,12 +7,12 @@ from rod_cutting.solution import RodCuttingSolution
 
 class BottomUp(RodCuttingSolver):
     '''
-    Representation of a recursive top-down algorithm for solving the rod cutting problem.
+    Representation of a bottom-up algorithm for solving the rod cutting problem.
     '''
     @classmethod
     def solve(cls, instance: RodCuttingInstance) -> RodCuttingSolution:
         '''
-        Implementation of recursive top-down algorithm for solving the rod cutting problem.
+        Implementation of bottom-up algorithm for solving the rod cutting problem.
         '''
         n = instance.rod_length
         p = instance.prices
