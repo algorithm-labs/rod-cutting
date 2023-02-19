@@ -37,6 +37,9 @@ jobs:
     - name: Install dependencies
       run: |
         poetry install
-    - name: Test with pytest
+    - name: Unit tests
       run: |
         poetry run pytest tests/
+    - name: Benchmarks
+      run: |
+        poetry run pytest --benchmark-group-by=param:rod_size tests/benchmarks/
