@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "dynamic-programming"
+name = "rod-cutting"
 version = "0.1.0"
-description = "Dynamic Programming: Examples and Experiments"
+description = "Rod cutting algorithms"
 authors = ["Sebastian Winkler <sebwink@pm.me>"]
 license = "MIT"
 readme = "README.md"
