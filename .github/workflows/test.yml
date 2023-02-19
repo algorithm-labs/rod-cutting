@@ -15,22 +15,25 @@ jobs:
         os: [ "ubuntu-latest", "macos-latest", "windows-latest" ]
         
     runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
 
     steps:
     - uses: actions/checkout@v3
     - name: Install Poetry
       uses: snok/install-poetry@v1
+    #- name: Ensure Poetry is in PATH
+    #  run: |
+    #    echo "$HOME/.local/bin" >> $GITHUB_PATH
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
       with:
-        shell: bash
         python-version: ${{ matrix.python-version }}
         cache: 'poetry'
     - name: Install dependencies
-      shell: bash
       run: |
         poetry install
     - name: Test with pytest
-      shell: bash
       run: |
         poetry run pytest tests/
