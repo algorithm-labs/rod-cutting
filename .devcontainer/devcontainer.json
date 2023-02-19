@@ -1,0 +1,15 @@
+{
+  "build": { "dockerfile": "Dockerfile" },
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "ms-python.python",
+        "njqdev.vscode-python-typehint",
+        "njpwerner.autodocstring",
+        "bungcip.better-toml"
+      ]
+    }
+  }
+}
