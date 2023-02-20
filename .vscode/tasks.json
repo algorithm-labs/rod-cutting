@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Tests",
+            "type": "shell",
+            "command": "make test",
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Benchmarks",
+            "type": "shell",
+            "command": "make benchmark@${input:benchmark-grouping}",
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "benchmark-grouping",
+            "description": "How to group the benchmarks",
+            "default": "rod_size",
+            "type": "promptString"
+        }
+    ]
+}

@@ -5,7 +5,7 @@ benchmark: benchmark@rod_size
 	@#
 
 benchmark@%: install
-	poetry run pytest --benchmark-group-by=param:$* tests/benchmarks/
+	poetry run pytest --benchmark-group-by=param:$* --benchmark-columns="mean,stddev" tests/benchmarks/
 
 install:
 	poetry install
