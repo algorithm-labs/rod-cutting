@@ -3,6 +3,7 @@ import pytest
 from pydantic import ValidationError
 
 from rod_cutting.instance import RodCuttingInstance
+from rod_cutting.capnp import instance, solution
 
 
 def test_instance():

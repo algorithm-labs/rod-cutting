@@ -1,6 +1,7 @@
 from rod_cutting.instance import RodCuttingInstance
 from rod_cutting.solution import RodCuttingSolution
 
+
 # Cormen, Leiserson, Rivest, Stein: Introduction to Algorithms, 3rd Edition
 # Chaper 15, Section 15.1
 CLRS_15_1 = RodCuttingInstance(

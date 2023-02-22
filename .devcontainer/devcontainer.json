@@ -8,7 +8,8 @@
         "ms-python.python",
         "njqdev.vscode-python-typehint",
         "njpwerner.autodocstring",
-        "bungcip.better-toml"
+        "bungcip.better-toml",
+        "xmonader.vscode-capnp"
       ]
     }
   },
